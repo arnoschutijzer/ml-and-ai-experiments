@@ -1,0 +1,17 @@
+[project]
+name = "qwen-flash-chat"
+version = "0.1.0"
+description = "Local terminal chat with Qwen Flash"
+readme = "README.md"
+authors = [
+    { name = "Arno Schutijzer", email = "arno.schutijzer@protonmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = ["mlx-vlm==0.8.1"]
+
+[project.scripts]
+qwen-flash-chat = "qwen_flash_chat:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
